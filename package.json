@@ -1,0 +1,20 @@
+{
+  "name": "boru",
+  "version": "1.0.0",
+  "description": "Own your hooks",
+  "main": "bin/cli.js",
+  "bin": {
+    "boru": "./bin/cli.js"
+  },
+  "keywords": [
+    "git",
+    "hooks",
+    "husky-alternative",
+    "dx"
+  ],
+  "author": "Borja Muñoz",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
