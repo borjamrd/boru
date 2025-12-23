@@ -6,6 +6,14 @@
 [![npm version](https://img.shields.io/npm/v/boru.svg?style=flat-square)](https://www.npmjs.com/package/boru)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
+## 🚀 Quick Start
+
+Run the command in the root of your git repository:
+
+```bash
+npx boru
+```
+
 ## 🤔 Why?
 
 Traditional tools like Husky are powerful but often introduce:
@@ -24,14 +32,6 @@ Traditional tools like Husky are powerful but often introduce:
 - 🛠️ **Fully Customizable:** Edit your hooks directly in your editor.
 - 🎛️ **Interactive CLI:** Select only the hooks you need (Space to toggle).
 - 💾 **Git Control:** The CLI asks if you want to stage the new files to Git automatically.
-
-## 🚀 Quick Start
-
-Run the command in the root of your git repository:
-
-```bash
-npx boru
-```
 
 ## 📂 How it works
 
@@ -94,4 +94,5 @@ Because there is no magic, "uninstalling" is trivial:
 ## 📄 License
 
 MIT © Borja Muñoz
+
 # boru
