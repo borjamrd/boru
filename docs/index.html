@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boru - Own your hooks</title>
+    <meta
+      name="description"
+      content="Zero dependencies. No magic. Just native Git hooks."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar">
+      <div class="logo">boru</div>
+      <div class="links">
+        <a
+          href="https://github.com/borjamunoz/boru"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://www.npmjs.com/package/boru"
+          target="_blank"
+          rel="noopener noreferrer"
+          >npm</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1 class="title">Own your <span class="gradient-text">hooks</span></h1>
+        <p class="subtitle">
+          Zero dependencies. No magic. Just native Git scripts that live in your
+          repo.
+        </p>
+
+        <div class="install-container">
+          <div class="install-command">
+            <span class="prompt">$</span> npx boru
+          </div>
+          <button
+            class="copy-btn"
+            onclick="navigator.clipboard.writeText('npx boru')"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path
+                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature-card">
+          <div class="icon">📦</div>
+          <h3>Zero Dependencies</h3>
+          <p>
+            No heavy binaries. Your hooks are just simple shell scripts that run
+            natively.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🚀</div>
+          <h3>Native Speed</h3>
+          <p>
+            Leverages Git's native <code>core.hooksPath</code> for maximum
+            performance.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🛠️</div>
+          <h3>Full Control</h3>
+          <p>
+            You own the code. Edit your hooks directly in your editor. No hidden
+            magic.
+          </p>
+        </div>
+      </section>
+
+      <section class="why">
+        <h2>Why Boru?</h2>
+        <p>
+          Traditional tools abstract too much. Boru scaffolding simply gives you
+          the files you need and sets the config. You can delete Boru after
+          running it, and your hooks keep working.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Boru. Build by Borja Muñoz.</p>
+    </footer>
+  </body>
+</html>
