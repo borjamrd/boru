@@ -17,7 +17,10 @@
       property="og:description"
       content="Zero dependencies. No magic. Just native Git hooks."
     />
-    <meta property="og:image" content="public/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://borjamrd.github.io/boru/og-image.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -29,6 +32,18 @@
     />
     <meta
       property="twitter:image"
+      content="https://borjamrd.github.io/boru/og-image.png"
+    />
+
+    <!-- whatsapp -->
+    <meta property="og:url" content="https://borjamrd.github.io/boru/" />
+    <meta property="og:title" content="Boru - Own your hooks" />
+    <meta
+      property="og:description"
+      content="Zero dependencies. No magic. Just native Git hooks."
+    />
+    <meta
+      property="og:image"
       content="https://borjamrd.github.io/boru/og-image.png"
     />
 
@@ -120,6 +135,36 @@
             You own the code. Edit your hooks directly in your editor. No hidden
             magic.
           </p>
+        </div>
+      </section>
+
+      <section class="examples">
+        <h2 class="section-header">Configuration Examples</h2>
+        <div class="features">
+          <div class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>pre-commit</h3>
+            <p>Run tests or linters before every commit.</p>
+            <pre><code>#!/bin/sh
+npm run test
+npm run lint</code></pre>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">📝</div>
+            <h3>commit-msg</h3>
+            <p>Ensure your commit messages follow a convention.</p>
+            <pre><code>#!/bin/sh
+npx commitlint --edit "$1"</code></pre>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">🚀</div>
+            <h3>pre-push</h3>
+            <p>Run build or integration tests before pushing.</p>
+            <pre><code>#!/bin/sh
+npm run build</code></pre>
+          </div>
         </div>
       </section>
 

@@ -2,8 +2,10 @@
     --bg-color: #0d0d0e;
     --text-primary: #ffffff;
     --text-secondary: #a1a1aa;
-    --accent-primary: #8b5cf6; /* Violet */
-    --accent-secondary: #ec4899; /* Pink */
+    --accent-primary: #8b5cf6;
+    /* Violet */
+    --accent-secondary: #ec4899;
+    /* Pink */
     --surface: #18181b;
     --border: #27272a;
     --font-heading: 'Outfit', sans-serif;
@@ -55,6 +57,7 @@ body {
     font-size: 1.5rem;
     letter-spacing: -0.05em;
     background: linear-gradient(to right, #fff, #a1a1aa);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -96,6 +99,7 @@ main {
 
 .gradient-text {
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -231,4 +235,31 @@ footer {
     .title {
         font-size: 2.5rem;
     }
+}
+
+/* Code blocks */
+pre {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-top: 1rem;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+}
+
+.section-header {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: -0.05em;
 }
